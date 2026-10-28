@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9c6dc"/>
+      <stop offset=".45" stop-color="#e9dccd"/>
+      <stop offset=".75" stop-color="#f6d6b4"/>
+      <stop offset="1" stop-color="#f3c79c"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".78" cy=".52" r=".45">
+      <stop offset="0" stop-color="#fff3df" stop-opacity=".95"/>
+      <stop offset=".35" stop-color="#ffe2bd" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#ffe2bd" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f6fb"/>
+      <stop offset=".35" stop-color="#d9dbea"/>
+      <stop offset="1" stop-color="#a9aec9"/>
+    </linearGradient>
+    <linearGradient id="farShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8f96b8" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#8f96b8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8e93ac"/>
+      <stop offset="1" stop-color="#6c7290"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f5670"/>
+      <stop offset="1" stop-color="#363c55"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2d3d"/>
+      <stop offset="1" stop-color="#1b1d29"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6e6d4" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#f6e6d4" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#f6e6d4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a3b25"/>
+      <stop offset="1" stop-color="#3d2014"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a4a2a"/>
+      <stop offset=".6" stop-color="#b26a3a"/>
+      <stop offset="1" stop-color="#6e391f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd98a"/>
+      <stop offset="1" stop-color="#c98b2c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <rect width="1200" height="900" fill="url(#sun)"/>
+
+  <!-- far snow range -->
+  <path d="M0 470 L70 410 L120 430 L190 330 L240 372 L300 280 L352 340 L400 300 L470 210 L520 268 L560 240 L640 150 L700 236 L742 214 L800 280 L850 248 L920 320 L980 262 L1040 330 L1100 290 L1200 350 L1200 600 L0 600Z" fill="url(#far)"/>
+  <path d="M300 280 L352 340 L330 400 L290 380 L262 410 L240 372Z M470 210 L520 268 L500 330 L470 300 L440 350 L420 300 L400 300Z M640 150 L700 236 L672 280 L640 250 L610 300 L590 270 L560 240Z M920 320 L980 262 L960 330 L930 360Z M190 330 L240 372 L210 420 L170 400 L120 430Z" fill="url(#farShade)"/>
+  <path d="M640 150 L662 182 L650 196 L640 186 L628 206 L616 190 L622 176Z M470 210 L488 232 L476 244 L466 236 L456 250 L452 232Z M300 280 L316 300 L304 312 L294 304 L286 314 L284 300Z" fill="#ffffff"/>
+
+  <!-- mist band -->
+  <rect x="0" y="470" width="1200" height="120" fill="url(#mist)"/>
+
+  <!-- mid range -->
+  <path d="M0 560 L90 520 L170 548 L260 500 L350 540 L430 508 L520 552 L610 520 L690 556 L780 516 L870 560 L960 528 L1060 566 L1200 530 L1200 700 L0 700Z" fill="url(#mid)" opacity=".85"/>
+  <rect x="0" y="560" width="1200" height="80" fill="url(#mist)" opacity=".6"/>
+
+  <!-- hills -->
+  <path d="M0 650 C120 610 220 640 320 620 C430 598 520 640 640 622 C760 604 860 640 980 618 C1080 600 1150 620 1200 612 L1200 900 L0 900Z" fill="url(#hill)"/>
+
+  <!-- valley town lights -->
+  <g fill="#ffcf8a" opacity=".85">
+    <circle cx="120" cy="700" r="2"/><circle cx="160" cy="712" r="1.6"/><circle cx="210" cy="696" r="2"/><circle cx="260" cy="718" r="1.6"/><circle cx="330" cy="704" r="2.2"/><circle cx="380" cy="722" r="1.6"/><circle cx="440" cy="708" r="2"/><circle cx="500" cy="726" r="1.6"/><circle cx="560" cy="712" r="2"/><circle cx="610" cy="730" r="1.6"/>
+    <circle cx="180" cy="740" r="1.6"/><circle cx="300" cy="748" r="2"/><circle cx="420" cy="752" r="1.6"/><circle cx="540" cy="760" r="2"/>
+  </g>
+
+  <!-- foreground ridge + trees -->
+  <path d="M300 900 C380 860 470 820 560 796 C620 780 690 760 760 740 C840 720 900 690 980 686 C1060 682 1140 700 1200 690 L1200 900Z" fill="url(#near)"/>
+  <g fill="#1b1d29">
+    <path d="M560 790 l14 -46 l14 46Z"/><path d="M590 784 l10 -34 l10 34Z"/><path d="M640 770 l16 -54 l16 54Z"/><path d="M690 760 l12 -40 l12 40Z"/><path d="M1150 700 l14 -50 l14 50Z"/><path d="M1180 704 l10 -36 l10 36Z"/>
+  </g>
+
+  <!-- pagoda -->
+  <g transform="translate(930 372) scale(.8)">
+    <!-- finial -->
+    <rect x="-3" y="-70" width="6" height="40" fill="url(#gold)"/>
+    <ellipse cx="0" cy="-74" rx="8" ry="10" fill="url(#gold)"/>
+    <ellipse cx="0" cy="-36" rx="14" ry="6" fill="url(#gold)"/>
+    <!-- roof 1 -->
+    <path d="M0 -30 L60 22 Q74 30 86 26 L82 38 L-82 38 L-86 26 Q-74 30 -60 22Z" fill="url(#roof)"/>
+    <path d="M-82 38 L82 38 L80 44 L-80 44Z" fill="#2c160d"/>
+    <rect x="-40" y="44" width="80" height="44" fill="url(#wood)"/>
+    <g fill="#ffcd7a"><rect x="-30" y="54" width="10" height="22"/><rect x="-5" y="54" width="10" height="22"/><rect x="20" y="54" width="10" height="22"/></g>
+    <!-- roof 2 -->
+    <path d="M-48 88 L48 88 L104 132 Q118 140 130 136 L126 150 L-126 150 L-130 136 Q-118 140 -104 132Z" fill="url(#roof)"/>
+    <path d="M-126 150 L126 150 L124 157 L-124 157Z" fill="#2c160d"/>
+    <rect x="-64" y="157" width="128" height="54" fill="url(#wood)"/>
+    <g fill="#ffcd7a"><rect x="-52" y="168" width="12" height="28"/><rect x="-24" y="168" width="12" height="28"/><rect x="12" y="168" width="12" height="28"/><rect x="40" y="168" width="12" height="28"/></g>
+    <!-- roof 3 -->
+    <path d="M-72 211 L72 211 L150 266 Q166 276 180 270 L176 286 L-176 286 L-180 270 Q-166 276 -150 266Z" fill="url(#roof)"/>
+    <path d="M-176 286 L176 286 L174 294 L-174 294Z" fill="#2c160d"/>
+    <rect x="-96" y="294" width="192" height="76" fill="url(#wood)"/>
+    <g fill="#ffcd7a"><rect x="-80" y="308" width="14" height="40"/><rect x="-46" y="308" width="14" height="40"/><rect x="-7" y="308" width="14" height="40"/><rect x="32" y="308" width="14" height="40"/><rect x="66" y="308" width="14" height="40"/></g>
+    <!-- struts -->
+    <g stroke="#2c160d" stroke-width="4"><path d="M-96 300 L-130 282"/><path d="M96 300 L130 282"/><path d="M-64 162 L-96 146"/><path d="M64 162 L96 146"/></g>
+    <!-- plinth steps -->
+    <rect x="-120" y="370" width="240" height="22" fill="#5a3a2a"/>
+    <rect x="-150" y="392" width="300" height="24" fill="#4a2f22"/>
+    <rect x="-180" y="416" width="360" height="26" fill="#3b2519"/>
+    <rect x="-210" y="442" width="420" height="40" fill="#2a1a12"/>
+    <!-- bells -->
+    <g fill="url(#gold)"><circle cx="-84" cy="40" r="3"/><circle cx="84" cy="40" r="3"/><circle cx="-128" cy="152" r="3.5"/><circle cx="128" cy="152" r="3.5"/><circle cx="-178" cy="288" r="4"/><circle cx="178" cy="288" r="4"/></g>
+  </g>
+</svg>
