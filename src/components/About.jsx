@@ -10,7 +10,7 @@ export default function About() {
           <span className="eyebrow">About Prayu</span>
           <h2>We are Prayu.</h2>
           <p>
-            A Nepal-based technology company building digital experiences and business systems for companies in
+            A web design and software company based in Kathmandu, Nepal, building digital experiences and business systems for companies in
             Nepal and beyond. Founded by Yugal Nyoupane and Prabal Koirala.
           </p>
           <div className="about-tags"><span>Software</span><span>ERP</span><span>Web Design</span></div>

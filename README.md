@@ -51,9 +51,29 @@ src/
     hero-himalaya.svg      hero and About illustration
     logo-mark.svg
     clients/               client logos
+  pages/                   Home and the shared service landing page template
+  data/pages.js            SEO landing page content
+  entry-server.jsx         server render entry used by the pre-renderer
+scripts/prerender.mjs      writes static HTML, meta tags, sitemap.xml, robots.txt
 public/
-  favicon.svg
+  favicon.svg, og-image.jpg, apple-touch-icon.png
 ```
+
+## SEO
+
+`npm run build` pre-renders every page to static HTML (`scripts/prerender.mjs`), so Google, Bing,
+social previews and AI crawlers see the full content without running JavaScript. It also writes the
+per-page title, description, canonical URL, Open Graph tags, JSON-LD structured data,
+`sitemap.xml` and `robots.txt`.
+
+- **Set the domain first:** change `siteUrl` in `src/data/site.js` (or set `SITE_URL` in the host's
+  environment variables). Canonicals, sitemap and structured data all use it.
+- **Landing pages:** each entry in `src/data/pages.js` becomes its own URL
+  (`/web-design-nepal/`, `/custom-software-development-nepal/`, `/erp-software-nepal/`,
+  `/construction-erp-software/`). Add a page by adding an entry; it is linked from the footer automatically.
+- **Social profiles:** fill in `socials` in `src/data/site.js`; they are added to the structured data as `sameAs`.
+- **Images:** use WebP, under ~200 KB each.
+- After launch: verify the domain in Google Search Console and Bing Webmaster Tools and submit `/sitemap.xml`.
 
 ## Common edits
 

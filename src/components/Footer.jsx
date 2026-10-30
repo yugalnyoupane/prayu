@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin, LinkedIn, Facebook, Instagram } from "./Icons";
 import { contact, navLinks, socials } from "../data/site";
-import prayuLogo from "../assets/prayu-logo.png";
+import { servicePages } from "../data/pages";
+import prayuLogo from "../assets/prayu-logo.webp";
 
 const socialLinks = [
   { key: "linkedin", label: "LinkedIn", Icon: LinkedIn },
@@ -14,14 +15,15 @@ export default function Footer() {
       <div className="wrap">
         <div className="foot-row">
           <div>
-            <a className="brand" href="#top" aria-label="Prayu Digital home">
-              <img src={prayuLogo} alt="Prayu" width="122" height="61" />
+            <a className="brand" href="/" aria-label="Prayu Digital home">
+              <img src={prayuLogo} alt="Prayu Digital" width="122" height="61" />
             </a>
-            <p>Digital systems for modern businesses.</p>
+            <p>Web design, custom software and ERP from Kathmandu, Nepal.</p>
           </div>
 
           <nav className="foot-links" aria-label="Footer">
             {navLinks.map((l) => <a key={l.href} href={l.href}>{l.label}</a>)}
+            {servicePages.map((p) => <a key={p.path} href={p.path}>{p.navLabel}</a>)}
           </nav>
 
           <ul className="foot-contact">

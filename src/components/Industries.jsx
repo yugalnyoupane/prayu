@@ -9,17 +9,18 @@ export default function Industries() {
         <SectionHead
           eyebrow="Industries"
           title="Built for the way different businesses work."
-          link={{ href: "#contact", label: "View all industries" }}
+          link={{ href: "/erp-software-nepal/", label: "ERP by industry" }}
         />
         <div className="ind-grid">
           {industries.map((item) => {
             const Icon = Icons[item.icon];
+            const Tag = item.href ? "a" : "div";
             return (
-              <div className="ind reveal" key={item.title}>
+              <Tag className="ind reveal" key={item.title} {...(item.href ? { href: item.href, style: { textDecoration: "none" } } : {})}>
                 <span className="ic"><Icon /></span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-              </div>
+              </Tag>
             );
           })}
           <a className="ind other reveal" href="#contact" style={{ textDecoration: "none" }}>

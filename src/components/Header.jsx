@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../data/site";
 import { ArrowRight } from "./Icons";
-import prayuLogo from "../assets/prayu-logo.png";
+import prayuLogo from "../assets/prayu-logo.webp";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,8 +26,8 @@ export default function Header() {
   return (
     <header className={`site-header${scrolled ? " scrolled" : ""}${open ? " nav-open" : ""}`}>
       <div className="wrap">
-        <a className="brand" href="#top" aria-label="Prayu Digital home" onClick={close}>
-          <img src={prayuLogo} alt="Prayu" width="122" height="61" />
+        <a className="brand" href="/" aria-label="Prayu Digital home" onClick={close}>
+          <img src={prayuLogo} alt="Prayu Digital" width="122" height="61" />
         </a>
 
         <nav className="main-nav" id="main-nav" aria-label="Main">

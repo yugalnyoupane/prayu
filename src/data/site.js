@@ -3,6 +3,22 @@
  * Change text, contact details, clients or links without touching the components.
  */
 
+/*
+ * The live domain. Used for canonical URLs, the sitemap, Open Graph tags and
+ * structured data. Set it to the real address before deploying, or set the
+ * SITE_URL environment variable on the host (it takes priority at build time).
+ */
+export const siteUrl = "https://prayudigital.com";
+
+export const business = {
+  name: "Prayu Digital",
+  legalName: "Prayu Digital",
+  founders: ["Yugal Nyoupane", "Prabal Koirala"],
+  locality: "Kathmandu",
+  region: "Bagmati Province",
+  country: "NP",
+};
+
 export const contact = {
   email: "digitalprayu@gmail.com",
   phones: [
@@ -19,16 +35,16 @@ export const socials = {
 };
 
 export const navLinks = [
-  { href: "#top", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#industries", label: "Industries" },
-  { href: "#clients", label: "Trusted By" },
-  { href: "#about", label: "About" },
+  { href: "/", label: "Home" },
+  { href: "/#services", label: "Services" },
+  { href: "/#industries", label: "Industries" },
+  { href: "/#clients", label: "Trusted By" },
+  { href: "/#about", label: "About" },
 ];
 
 export const industries = [
-  { icon: "Building", title: "Construction", text: "Projects, equipment, teams, procurement, costs." },
-  { icon: "Hotel", title: "Hospitality", text: "Reservations, operations, staff, guest experience." },
+  { icon: "Building", title: "Construction", text: "BOQ, measurement book, IPC, site reports, equipment.", href: "/construction-erp-software/" },
+  { icon: "Hotel", title: "Hospitality", text: "Hotel and resort websites, reservations, operations.", href: "/web-design-nepal/" },
   { icon: "Cart", title: "Retail & Distribution", text: "Sales, inventory, orders, customers." },
   { icon: "Briefcase", title: "Professional Services", text: "Clients, projects, billing, team management." },
 ];

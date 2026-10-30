@@ -8,11 +8,11 @@ export default function Hero() {
       </div>
       <div className="wrap">
         <div className="hero-copy">
-          <span className="eyebrow">Software / Websites / ERP</span>
+          <span className="eyebrow">Web design · Software · ERP · Kathmandu, Nepal</span>
           <h1>We build the <span className="accent">digital systems</span> for modern businesses.</h1>
           <p className="lede">
-            From professional websites to custom software and ERP systems, we help businesses in Nepal and
-            beyond work smarter, grow faster, and create lasting value.
+            Prayu Digital is a web design and software company in Kathmandu. From professional websites to
+            custom software and ERP systems, we help businesses in Nepal and beyond work smarter, grow faster, and create lasting value.
           </p>
           <div className="hero-actions">
             <a className="btn btn-dark" href="#contact">Start a Project <ArrowRight /></a>
