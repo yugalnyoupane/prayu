@@ -29,7 +29,7 @@ export const contact = {
 
 export const socials = {
   linkedin: "#",
-  facebook: "#",
+  facebook: "https://www.facebook.com/profile.php?id=61595924585945",
   instagram: "#",
 };
 
