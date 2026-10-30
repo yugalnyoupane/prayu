@@ -130,7 +130,4 @@ ${pages.map((p) => `  <url><loc>${siteUrl}${p.path}</loc><lastmod>${today}</last
 fs.writeFileSync(path.join(dist, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`);
 fs.rmSync(path.join(root, "dist-ssr"), { recursive: true, force: true });
 
-if (siteUrl.includes("prayudigital.com") && !process.env.SITE_URL) {
-  console.warn("\n  Note: using the default siteUrl. Set the real domain in src/data/site.js or the SITE_URL env var.\n");
-}
 console.log(`sitemap.xml and robots.txt written for ${siteUrl}`);

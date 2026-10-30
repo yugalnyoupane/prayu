@@ -5,8 +5,7 @@
 
 /*
  * The live domain. Used for canonical URLs, the sitemap, Open Graph tags and
- * structured data. Set it to the real address before deploying, or set the
- * SITE_URL environment variable on the host (it takes priority at build time).
+ * structured data. A SITE_URL environment variable on the host overrides it.
  */
 export const siteUrl = "https://prayudigital.com";
 
