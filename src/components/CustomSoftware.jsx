@@ -11,7 +11,7 @@ export default function CustomSoftware() {
             <span className="eyebrow">Software that fits your business</span>
             <h2>Stop adapting your business to software. <span>Build software around your business.</span></h2>
             <p>From a single internal tool to a complete ERP platform, we design and build software around your workflows.</p>
-            <a className="btn btn-accent" href="#contact">Build Your System <Icons.ArrowRight /></a>
+            <a className="btn btn-accent" href="/custom-software-development-nepal/">Build Your System <Icons.ArrowRight /></a>
           </div>
           <div className="modules-wrap">
             <DashboardDark />

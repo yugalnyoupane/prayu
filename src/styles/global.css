@@ -123,7 +123,7 @@ button { font: inherit; }
 .hero { position: relative; overflow: hidden; }
 .hero-media {
   position: absolute; top: 0; right: 0; bottom: 0; width: 58%;
-  background: url("../assets/hero-nepal.png") center / cover no-repeat;
+  background: url("../assets/hero-nepal.webp") center / cover no-repeat;
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 34%);
   mask-image: linear-gradient(90deg, transparent 0%, #000 34%);
 }
@@ -320,7 +320,7 @@ button { font: inherit; }
 
 /* ---------- about ---------- */
 .about { display: grid; grid-template-columns: 1fr 1.15fr; gap: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; }
-.about-media { min-height: 360px; background: url("../assets/about-nepal.png") 70% 60% / cover; }
+.about-media { min-height: 360px; background: url("../assets/about-nepal.webp") 70% 60% / cover; }
 .about-copy { padding: 48px; }
 .about-copy h2 { font-size: clamp(28px, 3vw, 38px); margin-top: 12px; }
 .about-copy p { color: var(--body); margin-top: 14px; }
@@ -414,3 +414,25 @@ button { font: inherit; }
 .about-full .about-tags span { color: #fff; background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .35); }
 .about-full .about-loc svg { color: #d5d1ff; }
 @media (max-width: 900px) { .about-full { min-height: 0; } .about-full .about-media { min-height: 100%; } .about-full .about-copy { padding: 48px 24px; } }
+
+/* ---------- Service landing pages ---------- */
+.page-hero { padding-block: 72px 40px; }
+.page-hero h1 { font-size: clamp(34px, 4.6vw, 56px); margin-top: 16px; max-width: 18em; }
+.page-hero .lede { margin-top: 20px; max-width: 40em; }
+.crumbs { font-size: 14px; color: var(--mute); margin-bottom: 22px; }
+.crumbs a { color: var(--body); text-decoration: none; }
+.crumbs a:hover { color: var(--accent); }
+.page-section { padding-block: 48px; }
+.page-section h2 { font-size: clamp(26px, 3vw, 36px); margin-bottom: 20px; }
+.page-text { color: var(--body); font-size: 17px; max-width: 46em; margin-bottom: 16px; }
+.page-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 8px; }
+.page-grid li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 22px; }
+.page-grid h3 { font-size: 18px; margin-bottom: 8px; }
+.page-grid p { color: var(--body); font-size: 15px; }
+.faq { display: grid; gap: 10px; max-width: 54em; }
+.faq details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 18px 22px; }
+.faq summary { cursor: pointer; font-weight: 700; }
+.faq details p { color: var(--body); margin-top: 10px; }
+.related { display: flex; flex-wrap: wrap; gap: 14px 28px; }
+@media (max-width: 900px) { .page-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .page-grid { grid-template-columns: 1fr; } .page-hero { padding-block: 48px 24px; } }
